@@ -24,8 +24,10 @@ Execute the program using runserver command.
 
 # PROGRAM
 urls.py
+```
 
-'''
+
+
 from django.contrib import admin
 from django.urls import path
 from app import views
@@ -36,11 +38,11 @@ urlpatterns = [
     path('',views.home)
 
     ]
-'''
+```
 
 views.py
 
-'''
+```
 from django.shortcuts import render,HttpResponse
 
 def fun(request):
@@ -49,11 +51,12 @@ def fun(request):
 def home(request):
     return render(request,'slot.html',{'name':'alice'})
 
-'''
+```
 
 table.html
 
-'''
+```
+
 <html>
 
 
@@ -220,7 +223,7 @@ table.html
 
 </html>
 
-'''
+```
 # OUTPUT
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-28 142844" src="https://github.com/user-attachments/assets/50bbb3e9-8f3d-4e5f-9ba4-699b92b9eb62" />
